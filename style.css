@@ -1,0 +1,79 @@
+/* His basic CSS */
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: sans-serif; 
+}
+
+header {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .3); 
+    position: sticky; 
+    top: 0px; /*Sticky doesn't work without top */ 
+    background: white; 
+}
+
+nav {
+    min-height: 10vh; 
+    margin: auto; 
+    width: 90%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+nav h1, nav ul {
+    font: 1.5 rem; 
+    flex: 1; 
+}
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+nav a {
+    color: black; 
+    text-decoration: none; 
+}
+
+section {
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+section h2 {
+    font: 5rem; 
+    color: white; 
+}
+
+.home {
+    background: linear-gradient(to right top, #f46b45, #eea849);
+}
+
+.products {
+    background: linear-gradient(to right top, #005c97, #363795);
+}
+
+.mission {
+    background: linear-gradient(to right top, #f46b45, #eea849);
+}
+
+.contact {
+    background: linear-gradient(to right top, #005c97, #363795); 
+}
+
+.bubble {
+    position: absolute; /*See what happens when it is not in position absolute*/
+    z-index: -2; /*So it is behind the text*/
+    background: linear-gradient(to right top, #005c97, #363795);  
+    /*We're going to give it a transition after, lets do JavaScript*/ 
+    transform: scale(1.5); 
+    transition: all 0.5s ease; 
+}
